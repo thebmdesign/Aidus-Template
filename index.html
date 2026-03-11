@@ -1,0 +1,1946 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aidus Template</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section
+      class="side-cart-panel"
+      id="side-cart"
+      aria-labelledby="cart-title"
+      role="region"
+    >
+      <div class="cart-header">
+        <h3 id="cart-title">Shopping Cart</h3>
+        <button class="cart-close" aria-label="Close cart">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="cart-body">
+        <div class="cart-items-list"></div>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Subtotal:</span>
+          <span class="total-amount">$0.00</span>
+        </div>
+        <div class="cart-actions">
+          <a href="#" class="header-nav-btn btn-checkout">Checkout</a>
+          <a href="#" class="header-nav-btn btn-view-cart">View Cart</a>
+        </div>
+      </div>
+    </section>
+
+    <header class="header-main">
+      <div class="header-topbar">
+        <div class="container-fluid">
+          <div class="header-topbar-inner">
+            <div class="header-topbar-left">
+              <ul class="header-topbar-info">
+                <li>
+                  <i class="fa-regular fa-envelope"></i>
+                  <a href="mailto:info@aidus.com">info@aidus.com</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:6775550110">(677) 555-0110</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="header-topbar-right">
+              <div class="header-selectors">
+                <div class="language-selector">
+                  <div class="custom-select-wrapper">
+                    <select id="languageSelect" class="hidden-select">
+                      <option value="en">English</option>
+                      <option value="sp">Spanish</option>
+                    </select>
+
+                    <div class="custom-select">
+                      <img
+                        src="./assets/icons/en-flag.9c146164.svg"
+                        alt="English"
+                        class="lang-flag current-flag"
+                      />
+                      <span class="current-lang-text">English</span>
+                    </div>
+
+                    <div class="custom-arrow">
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                    <div class="custom-options">
+                      <div
+                        class="custom-option"
+                        data-value="en"
+                        data-flag="./assets/icons/en-flag.9c146164.svg"
+                      >
+                        <img
+                          src="./assets/icons/en-flag.9c146164.svg"
+                          alt="English"
+                          class="lang-flag"
+                        />
+                        English
+                      </div>
+                      <div
+                        class="custom-option"
+                        data-value="sp"
+                        data-flag="./assets/icons/spanish-flag.41d9c0a3.svg"
+                      >
+                        <img
+                          src="./assets/icons/spanish-flag.41d9c0a3.svg"
+                          alt="Spanish"
+                          class="lang-flag"
+                        />
+                        Spanish
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="payment-selector">
+                  <select
+                    id="currencySelect"
+                    name="currency"
+                    class="native-select"
+                  >
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="header-topbar-social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-midbar">
+        <div class="container-fluid">
+          <div class="header-midbar-inner">
+            <div class="header-logo">
+              <a href="#"
+                ><img src="./assets/icons/logo.b91df22e.svg" alt="Logo"
+              /></a>
+            </div>
+            <div class="header-midbar-contacts">
+              <div class="header-contact-block">
+                <div class="header-contact-icon">
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="header-contact-info">
+                  <span class="header-contact-label">Opening Hours</span>
+                  <span class="header-contact-link"
+                    >Mon - Sat: 9:00 - 18:00</span
+                  >
+                </div>
+              </div>
+              <div class="header-contact-block">
+                <div class="header-contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="header-contact-info">
+                  <span class="header-contact-label">Our Address</span>
+                  <span class="header-contact-link"
+                    >Bowery St, New York, USA</span
+                  >
+                </div>
+              </div>
+              <div class="header-contact-block">
+                <div class="header-contact-icon">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="header-contact-info">
+                  <span class="header-contact-label">Contact Us</span>
+                  <a href="tel:6775550110" class="header-contact-link"
+                    >(677) 555-0110</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main-navbar">
+        <div class="header-navigation-area">
+          <div class="container-fluid">
+            <div class="header-nav-inner">
+              <button class="mobile-menu-toggle" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div class="header-logo-mobile">
+                <a href="#"
+                  ><img src="./assets/icons/logo-2.4a521f29.svg" alt="Logo"
+                /></a>
+              </div>
+              <nav class="header-main-nav">
+                <ul class="header-main-menu">
+                  <li class="menu-item-has-children">
+                    <a href="#">Home</a>
+                    <ul class="sub-menu">
+                      <li><a href="#">Home Style 1</a></li>
+                      <li><a href="#">Home Style 2</a></li>
+                      <li><a href="#">Home Style 3</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="menu-item-has-children">
+                    <a href="#">Pages</a>
+                    <ul class="sub-menu">
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Donate</a></li>
+                      <li class="menu-item-has-children">
+                        <a href="#">Event</a>
+                        <ul class="sub-menu">
+                          <li><a href="#">Event</a></li>
+                          <li><a href="#">Event Single</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="#">Causes</a>
+                        <ul class="sub-menu">
+                          <li><a href="#">Causes</a></li>
+                          <li><a href="#">Causes Single</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="#">Volunteer</a>
+                        <ul class="sub-menu">
+                          <li><a href="#">Volunteer</a></li>
+                          <li><a href="#">Volunteer S2</a></li>
+                          <li><a href="#">Volunteer Single</a></li>
+                          <li><a href="#">Become Volunteer</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">404 Error</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="menu-item-has-children">
+                    <a href="#">Services</a>
+                    <ul class="sub-menu">
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Services Single</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="menu-item-has-children">
+                    <a href="#">Portfolio</a>
+                    <ul class="sub-menu">
+                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="#">Portfolio Single</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="menu-item-has-children">
+                    <a href="#">Shop</a>
+                    <ul class="sub-menu">
+                      <li><a href="#">Shop</a></li>
+                      <li><a href="#">Shop Single</a></li>
+                      <li><a href="#">Cart</a></li>
+                      <li><a href="#">Checkout</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="menu-item-has-children">
+                    <a href="#">Blog</a>
+                    <ul class="sub-menu">
+                      <li><a href="#">Blog Right Sidebar</a></li>
+                      <li><a href="#">Blog Left Sidebar</a></li>
+                      <li><a href="#">Blog Fullwidth</a></li>
+                      <li class="menu-item-has-children">
+                        <a href="#">Blog Details</a>
+                        <ul class="sub-menu">
+                          <li><a href="#">Blog Details Right Sidebar</a></li>
+                          <li><a href="#">Blog Details Left Sidebar</a></li>
+                          <li><a href="#">Blog Details Fullwidth</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="header-nav-actions">
+                <div class="header-search">
+                  <a href="#" class="header-search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+
+                  <div class="search-form-wrapper">
+                    <form action="/" method="get" class="search-form-inner">
+                      <input
+                        type="text"
+                        name="s"
+                        placeholder="Search here..."
+                        required
+                      />
+                      <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                <div class="header-cart-icon">
+                  <a href="#" class="cart-toggle">
+                    <img src="./assets/images/parcel.png" alt="shopping bag" />
+                    <span class="cart-count">2</span>
+                  </a>
+                </div>
+                <div class="header-nav-divider"></div>
+                <a href="#" class="header-nav-btn">Donate Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="mobile-menu-wrapper" id="mobileMenuWrapper">
+      <div class="mobile-menu-overlay"></div>
+
+      <div class="mobile-menu-panel">
+        <div class="mobile-menu-header">
+          <div class="mobile-logo-inner">
+            <img src="./assets/icons/logo-2.4a521f29.svg" alt="Logo" />
+          </div>
+          <button class="mobile-menu-close" id="menuClose">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="mobile-menu-body">
+          <nav class="mobile-nav"></nav>
+        </div>
+
+        <div class="mobile-menu-footer">
+          <div class="mobile-menu-tools">
+            <div class="mobile-language"></div>
+
+            <div class="mobile-cart-link">
+              <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Cart</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="mobile-menu-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="main-content">
+      <section class="hero-section">
+        <div class="hero-slider swiper">
+          <div class="hero-wrapper swiper-wrapper">
+            <div class="hero-slide swiper-slide">
+              <div class="hero-inner hero-bg-1">
+                <div class="container-fluid">
+                  <div class="hero-content">
+                    <div class="section-title-wrap">
+                      <span class="sub-heading"
+                        >We are always open for children</span
+                      >
+                      <h1 class="main-heading">
+                        Give support to poverties &
+                        <span>Old</span> non profit Care
+                      </h1>
+                    </div>
+
+                    <div class="hero-btns">
+                      <a class="hero-theme-btn" href="#">About Us</a>
+                      <div class="hero-call">
+                        <div class="hero-call-icon">
+                          <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="hero-call-text">
+                          <h3>Call Us Now</h3>
+                          <span>+025 757 576 560</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hero-shape-main">
+                  <img
+                    src="./assets/icons/hero-shape-main.807bfb90.svg"
+                    alt="shape"
+                  />
+                </div>
+                <div class="hero-shape-1">
+                  <img
+                    src="./assets/icons/hero-shape-1.99c47c92.svg"
+                    alt="shape"
+                  />
+                </div>
+                <div class="hero-shape-2">
+                  <img
+                    src="./assets/icons/hero-shape-2.700502bc.svg"
+                    alt="shape"
+                  />
+                </div>
+                <div class="hero-shape-3">
+                  <img src="./assets/images/hero-shape-3.webp" alt="shape" />
+                </div>
+                <div class="hero-shape-4">
+                  <img
+                    src="./assets/icons/hero-shape-4.bd426867.svg"
+                    alt="shape"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-slide swiper-slide">
+              <div class="hero-inner hero-bg-2">
+                <div class="container-fluid">
+                  <div class="hero-content">
+                    <div class="section-title-wrap">
+                      <span class="sub-heading"
+                        >We are always open for children</span
+                      >
+                      <h1 class="main-heading">
+                        Give support to poverties &
+                        <span>Old</span> non profit Care
+                      </h1>
+                    </div>
+
+                    <div class="hero-btns">
+                      <a class="hero-theme-btn" href="#">About Us</a>
+                      <div class="hero-call">
+                        <div class="hero-call-icon">
+                          <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="hero-call-text">
+                          <h3>Call Us Now</h3>
+                          <span>+025 757 576 560</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hero-shape-main">
+                  <img
+                    src="./assets/icons/hero-shape-main.807bfb90.svg"
+                    alt="shape"
+                  />
+                </div>
+                <div class="hero-shape-1">
+                  <img
+                    src="./assets/icons/hero-shape-1.99c47c92.svg"
+                    alt="shape"
+                  />
+                </div>
+                <div class="hero-shape-2">
+                  <img
+                    src="./assets/icons/hero-shape-2.700502bc.svg"
+                    alt="shape"
+                  />
+                </div>
+                <div class="hero-shape-3">
+                  <img src="./assets/images/hero-shape-3.webp" alt="shape" />
+                </div>
+                <div class="hero-shape-4">
+                  <img
+                    src="./assets/icons/hero-shape-4.bd426867.svg"
+                    alt="shape"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-nav-prev">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="hero-nav-next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="hero-pagination swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="partners-section">
+        <div class="partners-slider">
+          <div class="partners-slide">
+            <div class="partners-inner">
+              <img
+                src="./assets/images/partners-logo-1.webp"
+                alt="Partner Logo"
+              />
+            </div>
+          </div>
+          <div class="partners-slide">
+            <div class="partners-inner">
+              <img
+                src="./assets/images/partners-logo-2.webp"
+                alt="Partner Logo"
+              />
+            </div>
+          </div>
+          <div class="partners-slide">
+            <div class="partners-inner">
+              <img
+                src="./assets/images/partners-logo-3.webp"
+                alt="Partner Logo"
+              />
+            </div>
+          </div>
+          <div class="partners-slide">
+            <div class="partners-inner">
+              <img
+                src="./assets/images/partners-logo-4.webp"
+                alt="Partner Logo"
+              />
+            </div>
+          </div>
+          <div class="partners-slide">
+            <div class="partners-inner">
+              <img
+                src="./assets/images/partners-logo-5.webp"
+                alt="Partner Logo"
+              />
+            </div>
+          </div>
+          <div class="partners-slide">
+            <div class="partners-inner">
+              <img
+                src="./assets/images/partners-logo-6.webp"
+                alt="Partner Logo"
+              />
+            </div>
+          </div>
+          <div class="partners-slide">
+            <div class="partners-inner">
+              <img
+                src="./assets/images/partners-logo-1.webp"
+                alt="Partner Logo"
+              />
+            </div>
+          </div>
+          <div class="partners-slide">
+            <div class="partners-inner">
+              <img
+                src="./assets/images/partners-logo-2.webp"
+                alt="Partner Logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stats" class="stats-section">
+        <div class="container">
+          <div class="row stats-wrapper">
+            <div class="col-md-6 col-12">
+              <div class="stats-content">
+                <div class="section-title-wrap">
+                  <span class="sub-heading"
+                    >Hope, Support, and Love for All</span
+                  >
+                  <h2 class="main-heading">
+                    We Work Together & Never <span>Give</span> Up
+                  </h2>
+                </div>
+                <p class="stats-description">
+                  Aidus is the world's driving worldwide coordinations supplier
+                  — we uphold industry and exchange the worldwide trade of
+                  mercha
+                </p>
+                <div class="stats-contact-wrapper">
+                  <a href="tel:415555987644" class="stats-contact-link">
+                    <div class="stats-contact-icon">
+                      <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <span class="stats-contact-number">(415) 555-98 76 44</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="stats-grid-side">
+                <div class="stats-grid">
+                  <div class="stats-item">
+                    <div class="stats-card">
+                      <span class="stats-counter" data-target="500">0</span
+                      ><span class="stats-suffix">+</span>
+                    </div>
+                    <p class="stats-label">Cities we have connected</p>
+                  </div>
+                  <div class="stats-item">
+                    <div class="stats-card">
+                      <span class="stats-counter" data-target="1.5">0</span
+                      ><span class="stats-suffix">m</span>
+                    </div>
+                    <p class="stats-label">Raise funds every month</p>
+                  </div>
+                  <div class="stats-item">
+                    <div class="stats-card">
+                      <span class="stats-counter" data-target="10">0</span
+                      ><span class="stats-suffix">+</span>
+                    </div>
+                    <p class="stats-label">We have monthly donor</p>
+                  </div>
+                  <div class="stats-item">
+                    <div class="stats-card">
+                      <span class="stats-counter" data-target="95">0</span
+                      ><span class="stats-suffix">%</span>
+                    </div>
+                    <p class="stats-label">Successful campains</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stats-shape"></div>
+      </section>
+
+      <section class="about-section">
+        <div class="container">
+          <div class="about-inner-wrapper">
+            <div class="col-md-6">
+              <div class="about-image-side">
+                <div class="about-main-image">
+                  <img src="./assets/images/about-1.png" alt="About Main" />
+                  <div class="about-video-btn-wrap">
+                    <button
+                      class="about-video-trigger"
+                      data-about-video-id="d9oK_T8T3m0"
+                    >
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="about-circle-image">
+                  <img src="./assets/images/about-2.png" alt="About Circle" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="about-content-side">
+                <div class="section-title-wrap">
+                  <span class="sub-heading"
+                    >We are always open for children</span
+                  >
+                  <h2 class="main-heading">
+                    Helping Each Other Can Make <span>World</span> Better
+                  </h2>
+                </div>
+
+                <p class="about-paragraph">
+                  Helping each other creates a stronger, kinder world. We build
+                  trust, spread compassion, and inspire others to do the same.
+                  Together, we can overcome challenges and make lasting positive
+                  changes.
+                </p>
+
+                <div class="about-info-boxes">
+                  <div class="about-info-item">
+                    <div class="about-info-icon">
+                      <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <div class="about-info-text">
+                      <h3 class="about-info-title">Trusted Organization</h3>
+                      <p class="about-info-desc">
+                        Offering a wide range of charity services globally.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="about-info-item">
+                    <div class="about-info-icon">
+                      <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div class="about-info-text">
+                      <h3 class="about-info-title">Awarded Services</h3>
+                      <p class="about-info-desc">
+                        Recognized for excellence in humanitarian aid.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <ul class="about-feature-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> We Help Companies
+                    Develop Powerful Corporate Social Responsibility
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i> Helped Fund 3,265
+                    Project Powerful Corporate Poor.
+                  </li>
+                </ul>
+
+                <div class="about-action-area">
+                  <a href="#" class="about-cta-btn">About Us</a>
+                  <div class="about-author-info">
+                    <div class="about-author-thumb">
+                      <img src="./assets/images/about-ceo.webp" alt="CEO" />
+                    </div>
+                    <div class="about-author-details">
+                      <h4 class="about-author-name">Moses Fahey</h4>
+                      <span class="about-author-tag">Ceo & Founder</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-shape-1"></div>
+        <div class="about-shape-2"></div>
+        <div class="about-shape-3"></div>
+        <div class="about-shape-4"></div>
+        <div class="about-shape-5"></div>
+        <div class="about-shape-6"></div>
+      </section>
+
+      <section class="approach-section">
+        <div class="approach-row">
+          <div class="approach-card">
+            <div class="approach-thumb">
+              <img src="./assets/images/approach-1.webp" alt="Food & Water" />
+            </div>
+            <div class="approach-icon-plus">
+              <a href="#">
+                <i class="fa-solid fa-plus"></i>
+                <div class="approach-shape">
+                  <svg viewBox="0 0 98 99" fill="none">
+                    <path
+                      d="M0 0H98V99C98 99 61.8947 91.6967 42.5526 55.9918C23.2105 20.2869 0 0 0 0Z"
+                      fill="#F74F22"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="approach-content">
+              <i class="fa-solid fa-faucet-drip"></i>
+              <h3 class="approach-title">
+                <a href="#">Food & Water Charity.</a>
+              </h3>
+            </div>
+          </div>
+
+          <div class="approach-card">
+            <div class="approach-thumb">
+              <img src="./assets/images/approach-2.webp" alt="Volunteer" />
+            </div>
+            <div class="approach-icon-plus">
+              <a href="#">
+                <i class="fa-solid fa-plus"></i>
+                <div class="approach-shape">
+                  <svg viewBox="0 0 98 99" fill="none">
+                    <path
+                      d="M0 0H98V99C98 99 61.8947 91.6967 42.5526 55.9918C23.2105 20.2869 0 0 0 0Z"
+                      fill="#F74F22"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="approach-content">
+              <i class="fa-solid fa-users"></i>
+              <h3 class="approach-title">
+                <a href="#">Become A Volunteer</a>
+              </h3>
+            </div>
+          </div>
+
+          <div class="approach-card">
+            <div class="approach-thumb">
+              <img src="./assets/images/approach-3.webp" alt="Gift" />
+            </div>
+            <div class="approach-icon-plus">
+              <a href="#">
+                <i class="fa-solid fa-plus"></i>
+                <div class="approach-shape">
+                  <svg viewBox="0 0 98 99" fill="none">
+                    <path
+                      d="M0 0H98V99C98 99 61.8947 91.6967 42.5526 55.9918C23.2105 20.2869 0 0 0 0Z"
+                      fill="#F74F22"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="approach-content">
+              <i class="fa-solid fa-gift"></i>
+              <h3 class="approach-title">
+                <a href="#">Send Gift For Children</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-section">
+        <div class="container">
+          <div class="service-section-header">
+            <div class="col-lg-8 col-md-8 col-12">
+              <div class="section-title-wrap">
+                <span class="sub-heading"
+                  >Together, We Can Change Lives Forever.</span
+                >
+                <h2 class="main-heading">
+                  Our Non-Profit Service <br />
+                  You Must Love
+                </h2>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="service-header-btn-wrap">
+                <a href="#" class="service-all-btn">All Services</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-section-wrap">
+            <div class="col-lg-5 col-12">
+              <div class="service-left">
+                <ul class="service-left-list">
+                  <li>
+                    <a href="#" class="service-list-link">
+                      <i
+                        class="fa-solid fa-hand-holding-heart service-icon"
+                      ></i>
+                      <span class="service-text">Fund Raised & Donation</span>
+                      <i
+                        class="fa-solid fa-arrow-right-long service-link-arrow"
+                      ></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="service-list-link">
+                      <i class="fa-solid fa-stethoscope service-icon"></i>
+                      <span class="service-text">Medical Treatment Help</span>
+                      <i
+                        class="fa-solid fa-arrow-right-long service-link-arrow"
+                      ></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="service-list-link">
+                      <i class="fa-solid fa-graduation-cap service-icon"></i>
+                      <span class="service-text">Development Programs</span>
+                      <i
+                        class="fa-solid fa-arrow-right-long service-link-arrow"
+                      ></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="service-list-link">
+                      <i class="fa-solid fa-microscope service-icon"></i>
+                      <span class="service-text">Child Medical Research</span>
+                      <i
+                        class="fa-solid fa-arrow-right-long service-link-arrow"
+                      ></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="service-list-link">
+                      <i class="fa-solid fa-box-open service-icon"></i>
+                      <span class="service-text">Corporate Gifts Donate</span>
+                      <i
+                        class="fa-solid fa-arrow-right-long service-link-arrow"
+                      ></i>
+                    </a>
+                  </li>
+                </ul>
+                <div class="service-more-wrap">
+                  <div class="service-more-content">
+                    <a href="#" class="service-more-link"> More Service</a>
+                  </div>
+                  <div class="service-arrow-svg">
+                    <svg width="58" height="59" viewBox="0 0 58 59" fill="none">
+                      <path
+                        d="M54.2137 14.9275C54.2946 23.4127 50.103 33.234 41.2272 34.6262C37.1014 35.2805 32.7028 33.2479 30.8405 29.3128C29.3958 26.2582 30.6579 22.3036 34.283 22.3228L34.2834 22.3229C36.8308 22.4389 39.1016 23.8711 40.3776 26.1666C45.2298 34.7562 35.5413 42.6647 28.2657 43.9192C19.8266 45.3851 11.4459 42.0345 5.84436 35.6938C5.03073 34.7748 3.55462 36.121 4.36829 37.04C10.4434 43.9139 19.4507 47.4913 28.578 45.8928C36.012 44.5998 43.8881 38.6038 43.3965 29.7439C43.2909 27.8559 42.7123 26.0594 41.7215 24.5411C40.7307 23.0228 39.363 21.8381 37.7608 21.1094C35.1648 19.9251 31.342 19.8652 29.3149 22.5945C26.9759 25.7034 28.6092 30.1415 30.6692 32.6273C33.0047 35.3931 36.3868 36.8987 39.9684 36.7675C50.3966 36.3523 56.1943 24.9281 56.0937 15.0108C56.0797 13.7323 54.2016 13.6272 54.2143 14.9274L54.2137 14.9275Z"
+                        fill="#F74F22"
+                      ></path>
+                      <path
+                        d="M8.63745 45.0051C7.10278 41.9681 5.74123 38.8277 4.55951 35.6002L3.84907 37.0423C7.72181 36.3585 11.5486 35.3144 15.2857 33.9219C16.4345 33.49 16.1333 31.5058 14.9742 31.9486C11.2394 33.3434 7.4142 34.3881 3.5432 35.0709C3.25617 35.1419 3.00764 35.3474 2.86862 35.6295C2.73 35.9117 2.71602 36.2392 2.83057 36.5193C4.00526 39.7433 5.35851 42.8809 6.88467 45.9158C7.44574 47.0269 9.18094 46.1094 8.60779 44.9946L8.63745 45.0051Z"
+                        fill="#F74F22"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7 col-12">
+              <div class="service-image">
+                <ul class="service-img-list">
+                  <li>
+                    <img src="assets/images/service-main.webp" alt="service" />
+                    <button
+                      class="service-video-trigger"
+                      data-service-video-id="VqmFKnHG5q8"
+                    >
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/images/service-sub-1.webp"
+                      alt="service"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/images/service-sub-2.webp"
+                      alt="service"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service-shape-1">
+          <img src="./assets/icons/service-shape-1.93921e4d.svg" alt="shape" />
+        </div>
+        <div class="service-shape-2">
+          <img src="./assets/icons/service-shape-2.2c1513f0.svg" alt="shape" />
+        </div>
+      </section>
+
+      <section class="projects-section">
+        <div class="container">
+          <div class="section-title">
+            <span class="sub-heading"
+              >Charity makes no decrease in property.</span
+            >
+            <h2 class="main-heading">
+              Helping Each Other Can <br />
+              Make <span>World</span> Better
+            </h2>
+          </div>
+        </div>
+
+        <div class="projects-slider-wrapper">
+          <div class="projects-slider-navigation"></div>
+
+          <div class="projects-slider">
+            <div class="project-slide">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="assets/images/project-1.webp" alt="Health" />
+                  <span class="project-tag">Health</span>
+                </div>
+                <div class="project-text">
+                  <h3>Let’s Help Children Build A Happy Future.</h3>
+                  <p>
+                    Business is the activity of making ones buying and selling
+                    product
+                  </p>
+                </div>
+                <div class="project-progress-wrap">
+                  <div class="project-progress-item">
+                    <div class="project-progress">
+                      <div class="project-bar" style="width: 90%">
+                        <span class="project-progress-label">90%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="project-progress-stats">
+                    <li>
+                      <span class="title">Goal:</span>
+                      <span>$10,000</span>
+                    </li>
+                    <li>
+                      <span class="title">Raised:</span>
+                      <span>$40,000</span>
+                    </li>
+                    <li>
+                      <span class="title">Goal:</span>
+                      <span>$20,000</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-slide">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="assets/images/project-2.webp" alt="Health" />
+                  <span class="project-tag">Health</span>
+                </div>
+                <div class="project-text">
+                  <h3>Let’s Help Children Build A Happy Future.</h3>
+                  <p>
+                    Business is the activity of making ones buying and selling
+                    product
+                  </p>
+                </div>
+                <div class="project-progress-wrap">
+                  <div class="project-progress-item">
+                    <div class="project-progress">
+                      <div class="project-bar" style="width: 90%">
+                        <span class="project-progress-label">90%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="project-progress-stats">
+                    <li>
+                      <span class="title">Goal:</span>
+                      <span>$10,000</span>
+                    </li>
+                    <li>
+                      <span class="title">Raised:</span>
+                      <span>$40,000</span>
+                    </li>
+                    <li>
+                      <span class="title">Goal:</span>
+                      <span>$20,000</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-slide">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="assets/images/project-3.webp" alt="Health" />
+                  <span class="project-tag">Health</span>
+                </div>
+                <div class="project-text">
+                  <h3>Let’s Help Children Build A Happy Future.</h3>
+                  <p>
+                    Business is the activity of making ones buying and selling
+                    product
+                  </p>
+                </div>
+                <div class="project-progress-wrap">
+                  <div class="project-progress-item">
+                    <div class="project-progress">
+                      <div class="project-bar" style="width: 90%">
+                        <span class="project-progress-label">90%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="project-progress-stats">
+                    <li>
+                      <span class="title">Goal:</span>
+                      <span>$10,000</span>
+                    </li>
+                    <li>
+                      <span class="title">Raised:</span>
+                      <span>$40,000</span>
+                    </li>
+                    <li>
+                      <span class="title">Goal:</span>
+                      <span>$20,000</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-slide">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="assets/images/project-4.webp" alt="Health" />
+                  <span class="project-tag">Health</span>
+                </div>
+                <div class="project-text">
+                  <h3>Let’s Help Children Build A Happy Future.</h3>
+                  <p>
+                    Business is the activity of making ones buying and selling
+                    product
+                  </p>
+                </div>
+                <div class="project-progress-wrap">
+                  <div class="project-progress-item">
+                    <div class="project-progress">
+                      <div class="project-bar" style="width: 90%">
+                        <span class="project-progress-label">90%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="project-progress-stats">
+                    <li>
+                      <span class="title">Goal:</span>
+                      <span>$10,000</span>
+                    </li>
+                    <li>
+                      <span class="title">Raised:</span>
+                      <span>$40,000</span>
+                    </li>
+                    <li>
+                      <span class="title">Goal:</span>
+                      <span>$20,000</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-slide">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="assets/images/project-5.webp" alt="Health" />
+                  <span class="project-tag">Health</span>
+                </div>
+                <div class="project-text">
+                  <h3>Let’s Help Children Build A Happy Future.</h3>
+                  <p>
+                    Business is the activity of making ones buying and selling
+                    product
+                  </p>
+                </div>
+                <div class="project-progress-wrap">
+                  <div class="project-progress-item">
+                    <div class="project-progress">
+                      <div class="project-bar" style="width: 90%">
+                        <span class="project-progress-label">90%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="project-progress-stats">
+                    <li>
+                      <span class="title">Goal:</span>
+                      <span>$10,000</span>
+                    </li>
+                    <li>
+                      <span class="title">Raised:</span>
+                      <span>$40,000</span>
+                    </li>
+                    <li>
+                      <span class="title">Goal:</span>
+                      <span>$20,000</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-slide">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="assets/images/project-6.webp" alt="Health" />
+                  <span class="project-tag">Health</span>
+                </div>
+                <div class="project-text">
+                  <h3>Let’s Help Children Build A Happy Future.</h3>
+                  <p>
+                    Business is the activity of making ones buying and selling
+                    product
+                  </p>
+                </div>
+                <div class="project-progress-wrap">
+                  <div class="project-progress-item">
+                    <div class="project-progress">
+                      <div class="project-bar" style="width: 90%">
+                        <span class="project-progress-label">90%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="project-progress-stats">
+                    <li>
+                      <span class="title">Goal:</span>
+                      <span>$10,000</span>
+                    </li>
+                    <li>
+                      <span class="title">Raised:</span>
+                      <span>$40,000</span>
+                    </li>
+                    <li>
+                      <span class="title">Goal:</span>
+                      <span>$20,000</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-shape-1">
+          <img src="assets/icons/projects-shape-1.15129fdb.svg" alt="heart" />
+        </div>
+        <div class="projects-bottom-overlay"></div>
+      </section>
+
+      <section class="cta-section">
+        <div class="cta-shape-1">
+          <img src="./assets/icons/cta-arrow.27c04623.svg" alt="arrow" />
+        </div>
+        <div class="cta-shape-2">
+          <img src="./assets/icons/cta-corner.e783f377.svg" alt="corner" />
+        </div>
+
+        <div class="container">
+          <div class="cta-content text-center">
+            <div class="section-title-wrap">
+              <span class="sub-heading"
+                >Compassion in Action: Join Us Today</span
+              >
+              <h2 class="main-heading">
+                Children Need Your Help <br />
+                By Donating Today
+              </h2>
+            </div>
+            <div class="cta-btn-wrap">
+              <a href="#" class="cta-section-btn">Become Volunteer</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-bottom-shape">
+          <img src="./assets/icons/cta-bottom-divider.svg" alt="divider" />
+        </div>
+      </section>
+
+      <section class="portfolio-section">
+        <div class="container">
+          <div class="section-title-wrap text-center">
+            <span class="sub-heading">We are always open for children</span>
+            <h2 class="main-heading">
+              Our Case Study About <br />
+              <span>Helping</span> People
+            </h2>
+          </div>
+        </div>
+
+        <div class="portfolio-slider-wrap">
+          <div class="portfolio-slider">
+            <div class="portfolio-item">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img
+                    src="./assets/images/portfolio-1.webp"
+                    alt="Portfolio 1"
+                  />
+                </div>
+                <div class="portfolio-content">
+                  <h3 class="portfolio-title">
+                    <a href="#">Help for African Child</a>
+                  </h3>
+                  <span>Education</span>
+                  <div class="portfolio-icon">
+                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img
+                    src="./assets/images/portfolio-2.webp"
+                    alt="Portfolio 2"
+                  />
+                </div>
+                <div class="portfolio-content">
+                  <h3 class="portfolio-title">
+                    <a href="#">Clean Water for Kids</a>
+                  </h3>
+                  <span>Charity</span>
+                  <div class="portfolio-icon">
+                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img
+                    src="./assets/images/portfolio-3.webp"
+                    alt="Portfolio 3"
+                  />
+                </div>
+                <div class="portfolio-content">
+                  <h3 class="portfolio-title">
+                    <a href="#">Clean Water for Kids</a>
+                  </h3>
+                  <span>Charity</span>
+                  <div class="portfolio-icon">
+                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="portfolio-card">
+                <div class="portfolio-img">
+                  <img
+                    src="./assets/images/portfolio-4.jpg"
+                    alt="Portfolio 4"
+                  />
+                </div>
+                <div class="portfolio-content">
+                  <h3 class="portfolio-title">
+                    <a href="#">Clean Water for Kids</a>
+                  </h3>
+                  <span>Charity</span>
+                  <div class="portfolio-icon">
+                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div class="container">
+          <div class="section-title-wrap text-center">
+            <span class="sub-heading">We are always open for children</span>
+            <h2 class="main-heading">
+              Helping Each Other Can <br />
+              Make <span>World</span> Better
+            </h2>
+          </div>
+
+          <div class="testimonial-slider-wrap">
+            <div class="testimonial-slider">
+              <div class="testimonial-item-single">
+                <div class="testimonial-card">
+                  <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                  <p>
+                    The other hand we denounceury grow with righteou indigation
+                    and le men who are so beguiled an Lorem moment. Dislike men
+                    who care by the charms of pleasur ipsum with righteou
+                    indigation and lesbi
+                  </p>
+                  <div class="author-info">
+                    <div class="author-img">
+                      <img
+                        src="./assets/images/author-1.webp"
+                        alt="Michel Jhonson"
+                      />
+                    </div>
+                    <div class="author-details">
+                      <h5>Michel Jhonson</h5>
+                      <span>CEO Barta</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-item-single">
+                <div class="testimonial-card">
+                  <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                  <p>
+                    Business is the activity of making one's living or buying
+                    and selling products. Helping each other can make the world
+                    a much better place for all.
+                  </p>
+                  <div class="author-info">
+                    <div class="author-img">
+                      <img
+                        src="./assets/images/author-2.webp"
+                        alt="Kristin Watson"
+                      />
+                    </div>
+                    <div class="author-details">
+                      <h5>Kristin Watson</h5>
+                      <span>Manager</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-item-single">
+                <div class="testimonial-card">
+                  <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                  <p>
+                    Denounce with righteous indignation and dislike men who are
+                    so beguiled and demoralized by the charms of pleasure of the
+                    moment so blinded.
+                  </p>
+                  <div class="author-info">
+                    <div class="author-img">
+                      <img
+                        src="./assets/images/author-1.webp"
+                        alt="Arlene McCoy"
+                      />
+                    </div>
+                    <div class="author-details">
+                      <h5>Arlene McCoy</h5>
+                      <span>Volunteer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-item-single">
+                <div class="testimonial-card">
+                  <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                  <p>
+                    Aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                    nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                    aliquip ex ea commodo consequat.
+                  </p>
+                  <div class="author-info">
+                    <div class="author-img">
+                      <img src="./assets/images/author-2.webp" alt="John Doe" />
+                    </div>
+                    <div class="author-details">
+                      <h5>John Doe</h5>
+                      <span>Designer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-item-single">
+                <div class="testimonial-card">
+                  <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                  <p>
+                    Nam liber tempor cum soluta nobis eleifend option congue
+                    nihil imperdiet doming id quod mazim placerat facer possim
+                    assum. Typi non habent claritatem.
+                  </p>
+                  <div class="author-info">
+                    <div class="author-img">
+                      <img
+                        src="./assets/images/author-1.webp"
+                        alt="Jane Smith"
+                      />
+                    </div>
+                    <div class="author-details">
+                      <h5>Jane Smith</h5>
+                      <span>CEO</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-item-single">
+                <div class="testimonial-card">
+                  <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                  <p>
+                    Eodem modo typi, qui nunc nobis videntur parum clari, fiant
+                    sollemnes in futurum. Est usus legentis in iis qui facit
+                    eorum claritatem.
+                  </p>
+                  <div class="author-info">
+                    <div class="author-img">
+                      <img src="./assets/images/author-2.webp" alt="Bob Rock" />
+                    </div>
+                    <div class="author-details">
+                      <h5>Bob Rock</h5>
+                      <span>Developer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section">
+        <div class="bg-shape shape-top-left"></div>
+        <div class="bg-shape shape-top-right"></div>
+        <div class="bg-shape shape-bottom-left"></div>
+        <div class="bg-shape shape-bottom-right"></div>
+        <div class="bg-shape shape-bottom-arrow"></div>
+
+        <div class="container">
+          <div class="process-grid">
+            <div class="process-item">
+              <div class="process-icon-wrap">
+                <img
+                  src="./assets/icons/order.svg"
+                  class="process-custom-icon"
+                  alt="Identify Needs"
+                />
+                <span class="process-number color-1">01</span>
+              </div>
+              <div class="process-shape">
+                <img
+                  src="./assets/icons/process-arrow-shape.126258a0.svg"
+                  alt="arrow"
+                />
+              </div>
+              <h2 class="process-title">Identify Needs</h2>
+            </div>
+
+            <div class="process-item">
+              <div class="process-icon-wrap">
+                <img
+                  src="./assets/icons/shield.svg"
+                  class="process-custom-icon"
+                  alt="Collect Money"
+                />
+                <span class="process-number color-2">02</span>
+              </div>
+              <div class="process-shape">
+                <img
+                  src="./assets/icons/process-arrow-shape.126258a0.svg"
+                  alt="arrow"
+                />
+              </div>
+              <h2 class="process-title">Collect Money</h2>
+            </div>
+
+            <div class="process-item">
+              <div class="process-icon-wrap">
+                <img
+                  src="./assets/icons/return.svg"
+                  class="process-custom-icon"
+                  alt="Engage Volunteers"
+                />
+                <span class="process-number color-3">03</span>
+              </div>
+              <div class="process-shape">
+                <img
+                  src="./assets/icons/process-arrow-shape.126258a0.svg"
+                  alt="arrow"
+                />
+              </div>
+              <h2 class="process-title">Engage Volunteers</h2>
+            </div>
+
+            <div class="process-item">
+              <div class="process-icon-wrap">
+                <img
+                  src="./assets/icons/delivery.svg"
+                  class="process-custom-icon"
+                  alt="Distribute Goods"
+                />
+                <span class="process-number color-4">04</span>
+              </div>
+              <h2 class="process-title">Distribute Goods</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="instagram-section">
+        <div class="insta-bg-area">
+          <div class="insta-bg-image"></div>
+          <div class="insta-shape">
+            <img
+              src="./assets/icons/insta-shape-2.ec3292d8.svg"
+              class="shape-2"
+              alt="shape"
+            />
+          </div>
+        </div>
+
+        <div class="container insta-content-wrapper">
+          <div class="section-title-wrap text-center">
+            <span class="sub-heading insta-white"
+              >We are always open for children</span
+            >
+            <h2 class="main-heading insta-white">Recent Instagram Post</h2>
+          </div>
+
+          <div class="insta-gallery-grid">
+            <div class="insta-gallery-card">
+              <a href="#" class="insta-feed-link">
+                <img src="./assets/images/insta-1.webp" alt="Insta 1" />
+                <div class="insta-gallery-overlay">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </a>
+            </div>
+            <div class="insta-gallery-card">
+              <a href="#" class="insta-feed-link">
+                <img src="./assets/images/insta-2.webp" alt="Insta 2" />
+                <div class="insta-gallery-overlay">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </a>
+            </div>
+            <div class="insta-gallery-card">
+              <a href="#" class="insta-feed-link">
+                <img src="./assets/images/insta-3.webp" alt="Insta 3" />
+                <div class="insta-gallery-overlay">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </a>
+            </div>
+            <div class="insta-gallery-card">
+              <a href="#" class="insta-feed-link">
+                <img src="./assets/images/insta-4.webp" alt="Insta 4" />
+                <div class="insta-gallery-overlay">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </a>
+            </div>
+            <div class="insta-gallery-card">
+              <a href="#" class="insta-feed-link">
+                <img src="./assets/images/insta-5.webp" alt="Insta 5" />
+                <div class="insta-gallery-overlay">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-section">
+        <div class="container">
+          <div class="section-title-wrap">
+            <span class="sub-heading">Hope, Support, and Love for All.</span>
+            <h2 class="main-heading">
+              Our Latest Article News <br />
+              & Blogs You Need
+            </h2>
+          </div>
+
+          <div class="row">
+            <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img
+                    src="./assets/images/blog-1.webp"
+                    alt="Blog Post Image"
+                    class="hover-img"
+                  />
+                  <img
+                    src="./assets/images/blog-1.webp"
+                    alt="Blog Image"
+                    class="main-img"
+                  />
+                  <ul class="blog-meta">
+                    <li>
+                      <i class="fa-regular fa-calendar-days"></i> 01-05-2025
+                    </li>
+                    <li><i class="fa-regular fa-comments"></i> 2 Comments</li>
+                  </ul>
+                </div>
+                <div class="blog-content">
+                  <h3>
+                    <a href="#"
+                      >Caring for the Elderly and Vulnerable Strategy.</a
+                    >
+                  </h3>
+                  <p>
+                    Business is the activity of making one's living or buying
+                    and selling products
+                  </p>
+
+                  <div class="blog-hover-bar">
+                    <a href="#" class="blog-cta-link"
+                      >Read More <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                    <a href="#" class="blog-tag-link">Business</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img
+                    src="./assets/images/blog-2.webp"
+                    alt="Blog Post Image"
+                    class="hover-img"
+                  />
+                  <img
+                    src="./assets/images/blog-2.webp"
+                    alt="Blog Image"
+                    class="main-img"
+                  />
+                  <ul class="blog-meta">
+                    <li>
+                      <i class="fa-regular fa-calendar-days"></i> 05-05-2025
+                    </li>
+                    <li><i class="fa-regular fa-comments"></i> 5 Comments</li>
+                  </ul>
+                </div>
+                <div class="blog-content">
+                  <h3>
+                    <a href="#"
+                      >Varying complexity, provide long-term guarantees</a
+                    >
+                  </h3>
+                  <p>
+                    Business is the activity of making one's living or buying
+                    and selling products
+                  </p>
+                  <div class="blog-hover-bar">
+                    <a href="#" class="blog-cta-link"
+                      >Read More <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                    <a href="#" class="blog-tag-link">Business</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img
+                    src="./assets/images/blog-3.webp"
+                    alt="Blog Post Image"
+                    class="hover-img"
+                  />
+                  <img
+                    src="./assets/images/blog-3.webp"
+                    alt="Blog Image"
+                    class="main-img"
+                  />
+                  <ul class="blog-meta">
+                    <li>
+                      <i class="fa-regular fa-calendar-days"></i> 10-05-2025
+                    </li>
+                    <li><i class="fa-regular fa-comments"></i> 3 Comments</li>
+                  </ul>
+                </div>
+                <div class="blog-content">
+                  <h3>
+                    <a href="#"
+                      >Our Goal Is Help The Poor Child Around The World</a
+                    >
+                  </h3>
+                  <p>
+                    Business is the activity of making one's living or buying
+                    and selling products
+                  </p>
+                  <div class="blog-hover-bar">
+                    <a href="#" class="blog-cta-link"
+                      >Read More <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                    <a href="#" class="blog-tag-link">Business</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-section">
+      <div class="footer-shape-1">
+        <img src="./assets/icons/footer-shape-1.svg" alt="shape" />
+      </div>
+      <div class="footer-shape-2">
+        <img src="./assets/icons/footer-shape-2.svg" alt="shape" />
+      </div>
+      <div class="footer-shape-3">
+        <img src="./assets/icons/footer-shape-3.svg" alt="shape" />
+      </div>
+      <div class="footer-shape-4">
+        <img src="./assets/icons/footer-shape-4.svg" alt="shape" />
+      </div>
+      <div class="footer-overlay"></div>
+      <div class="social-footer">
+        <div class="container">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+                <span>Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-pinterest-p"></i>
+                <span>Pinterest</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+                <span>Youtube</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-vimeo-v"></i>
+                <span>Vimeo</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-footer">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+              <div class="footer-col">
+                <h3>Subscribe Newsletter</h3>
+                <p>
+                  These agencies specialize leveraging various digital channels,
+                  such as social media advertising
+                </p>
+                <form class="newsletter-form">
+                  <input type="email" placeholder="Your email" />
+                  <button type="submit">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <div class="col col-lg-2 col-md-6 col-sm-12 col-12">
+              <div class="footer-col">
+                <h3>Services</h3>
+                <ul>
+                  <li><a href="#">Fund Raised & Donation</a></li>
+                  <li><a href="#">Medical Treatment Help</a></li>
+                  <li><a href="#">development programs</a></li>
+                  <li><a href="#">Child medical research</a></li>
+                  <li><a href="#">Corporate Gifts donate</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col col-lg-2 col-md-6 col-sm-12 col-12">
+              <div class="footer-col">
+                <h3>Useful Links</h3>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+              <div class="footer-col">
+                <h3>Locations</h3>
+                <p>55 Main Street, 2nd block Malborne, Australia</p>
+                <div class="contact-box">
+                  <span>Contact</span>
+                  <a href="mailto:support@logistika.com"
+                    >support@logistika.com</a
+                  >
+                  <a href="tel:+88012345688">+880 (123) 456 88</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col col-xs-12">
+              <div class="copyright-inner">
+                <p>© 2026 <a href="#">BM Design.</a> All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="scroll-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </footer>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
