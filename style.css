@@ -4328,9 +4328,8 @@ body {
   .cta-shape-1 {
     display: none;
   }
-
   .cta-bottom-shape {
-    display: none;
+  bottom: -34px;
   }
   /* Portfolio Section */
   .portfolio-slider .slick-dots {
