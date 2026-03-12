@@ -4281,6 +4281,10 @@ body {
     text-align: center;
   }
 
+  .service-section-header .main-heading {
+    font-size: 40px;
+  }
+
   .service-header-btn-wrap {
     text-align: center;
   }
@@ -4482,6 +4486,9 @@ body {
   .service-section .container {
     max-width: 720px;
     width: 100%;
+  }
+  .service-section-header .main-heading {
+    font-size: 34px;
   }
   /* Projects Section */
   .projects-section .projects-shape-1 {
