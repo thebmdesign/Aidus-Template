@@ -4316,7 +4316,10 @@ body {
     justify-content: center;
     width: 100%;
   }
-
+  /* Projects Section */
+  .projects-bottom-overlay {
+    height: 250px;
+  }
   /* CTA Section */
   .cta-section {
     padding: 140px 0;
