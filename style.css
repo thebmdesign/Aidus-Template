@@ -3823,8 +3823,9 @@ body {
   }
 
   .hero-inner::before {
-    background: rgba(6, 20, 8, 0.65);
+    background: #061408;
     z-index: 3;
+    opacity: 0.9;
   }
 
   .hero-content {
@@ -4121,7 +4122,7 @@ body {
   .header-nav-actions {
     flex: 0 0 100px;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 25px;
     padding: 0 30px 0 0;
   }
 
@@ -4179,6 +4180,9 @@ body {
   }
 
   /* Stats Section */
+  .stats-section {
+    padding: 90px 0;
+  }
   .stats-wrapper {
     flex-direction: column;
     gap: 55px;
