@@ -4610,6 +4610,9 @@ body {
     font-size: 16px;
   }
   /* Service Section */
+  .service-section .service-left {
+    margin: auto;
+  }
   .service-shape-1,
   .service-shape-2 {
     display: none;
