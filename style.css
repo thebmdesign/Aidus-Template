@@ -4424,6 +4424,9 @@ body {
     font-size: 32px;
   }
   /* Blog Section */
+  .blog-section {
+  padding-bottom: 60px;
+  }
   .main-heading {
     font-size: 34px;
   }
