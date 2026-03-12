@@ -4312,6 +4312,7 @@ body {
   /* CTA Section */
   .cta-section {
     padding: 140px 0;
+    overflow: hidden;
   }
   .cta-shape-1 {
     display: none;
